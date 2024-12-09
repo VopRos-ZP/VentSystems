@@ -23,7 +23,12 @@ namespace VentSystems.Model
         public int Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
-    
+
+        public override string ToString()
+        {
+            return Name;
+        }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Products> Products { get; set; }
     }

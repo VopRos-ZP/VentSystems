@@ -1,0 +1,36 @@
+﻿<Window x:Class="VentSystems.Windows.Upsert.UpsertProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="Продукт" Height="500" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20, 20, 20, 20">
+            <Image x:Name="Image" Source="{Binding ImageSource}" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <Button x:Name="SetImageBtn" Click="SetImageBtn_OnClick" Content="Установить фотографию" Height="30" FontSize="16" Width="250" Margin="0 10 0 0" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="20, 180, 20, 70" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20, 0, 20, 0">
+                <TextBlock Text="Название: " FontSize="16" HorizontalAlignment="Left" />
+                <TextBox Text="{Binding Path=Name}" FontSize="16" Width="150" HorizontalAlignment="Right" />
+            </Grid>
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20, 10, 20, 0">
+                <TextBlock Text="Количество: " FontSize="16" HorizontalAlignment="Left" />
+                <TextBox x:Name="CountTextBox" TextChanged="CountTextBox_OnTextChanged" Text="{Binding Path=Count}" FontSize="16" Width="150" HorizontalAlignment="Right" />
+            </Grid>
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20, 10, 20, 0">
+                <TextBlock Text="Склад: " FontSize="16" HorizontalAlignment="Left" />
+                <ComboBox x:Name="StoragesBox" SelectedItem="{Binding Path=Storages}" FontSize="16" Width="150" HorizontalAlignment="Right" />
+            </Grid>
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20, 10, 20, 0">
+                <TextBlock Text="Поставщик: " FontSize="16" HorizontalAlignment="Left" />
+                <ComboBox x:Name="SuppliersBox" SelectedItem="{Binding Path=Suppliers}" FontSize="16" Width="150" HorizontalAlignment="Right" />
+            </Grid>
+        </StackPanel>
+        <Button x:Name="SaveBtn" Click="SaveBtn_OnClick" Content="Сохранить" FontSize="16" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20, 0, 0, 20" />
+        <Button x:Name="CancelBtn" Click="CancelBtn_OnClick" Content="Отмена" FontSize="16" Width="150" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 20, 20" />
+    </Grid>
+</Window>

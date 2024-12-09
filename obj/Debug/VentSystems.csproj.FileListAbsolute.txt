@@ -23,3 +23,15 @@ C:\Users\XML110924\source\repos\VentSystems\obj\Debug\VentSystems.exe
 C:\Users\XML110924\source\repos\VentSystems\obj\Debug\VentSystems.pdb
 C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\RegistrationWindow.baml
 C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\RegistrationWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\XML110924\source\repos\VentSystems\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Users\XML110924\source\repos\VentSystems\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\XML110924\source\repos\VentSystems\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\AdminWindow.baml
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\UserWindow.baml
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\AdminWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\ManagerWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\UserWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\ManagerWindow.baml
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertProductWindow.baml
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertProductWindow.g.cs

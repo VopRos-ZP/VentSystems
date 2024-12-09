@@ -7,7 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace VentSystems.Model
 {
@@ -17,25 +20,58 @@ namespace VentSystems.Model
     using System.Drawing;
     using System.IO;
     
-    public partial class Products
+    public partial class Products : INotifyPropertyChanged
     {
+
+        private byte[] image;
+        private ImageSource imageSource;
+        
         public int Id { get; set; }
         public string Name { get; set; }
         public int Price { get; set; }
         public int Count { get; set; }
         public int StorageId { get; set; }
         public int SupplierId { get; set; }
-        public byte[] Image { get; set; }
 
-        public string ImageSource
+        public byte[] Image
         {
             get
             {
-                return $"data:image/png;base64,{Convert.ToBase64String(Image)}";
+                return image;
+            }
+            set
+            {
+                image = value;
+                var bitmapImage = new BitmapImage();
+                bitmapImage.BeginInit();
+                bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                bitmapImage.StreamSource = new MemoryStream(value);
+                bitmapImage.EndInit();
+                bitmapImage.Freeze();
+                ImageSource = bitmapImage;
+                OnPropertyChanged("Image");
             }
         }
-    
+
+        public ImageSource ImageSource
+        {
+            get => imageSource;
+            set
+            {
+                imageSource = value;
+                OnPropertyChanged("ImageSource");
+            }
+        }
+
         public virtual Storages Storages { get; set; }
         public virtual Suppliers Suppliers { get; set; }
+        
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        
     }
 }

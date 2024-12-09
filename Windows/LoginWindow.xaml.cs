@@ -25,7 +25,18 @@ namespace VentSystems.Windows
             }
             else
             {
-                new MainWindow(user).Show();
+                switch (user.RoleId)
+                {
+                    case 1:
+                        new UserWindow(user).Show();
+                        break;
+                    case 2:
+                        new AdminWindow(user).Show();
+                        break;
+                    default:
+                        new ManagerWindow(user).Show();
+                        break;
+                }
                 Close();
             }
         }
