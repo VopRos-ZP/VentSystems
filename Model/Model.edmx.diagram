@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="50c3401d121846a8b64f2134f9a9280a" Name="Diagram1">
+        <EntityTypeShape EntityType="ventsModel.Countries" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventsModel.Products" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventsModel.Roles" Width="1.5" PointX="5.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventsModel.Storages" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventsModel.Suppliers" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventsModel.Users" Width="1.5" PointX="8" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="ventsModel.FK__Suppliers__Count__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="ventsModel.FK__Products__Storag__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="ventsModel.FK__Products__Suppli__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="ventsModel.FK__Users__RoleId__267ABA7A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
