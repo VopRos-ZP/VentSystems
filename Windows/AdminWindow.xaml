@@ -12,22 +12,71 @@
             <TextBox x:Name="FindBox" FontSize="16" Width="250" Height="30" HorizontalAlignment="Left"
                      VerticalAlignment="Center" Margin="20, 0, 0 ,0" VerticalContentAlignment="Center" />
         </StackPanel>
-        <ListBox x:Name="ProductsList" IsSynchronizedWithCurrentItem="True" HorizontalAlignment="Stretch"
-                 VerticalAlignment="Stretch" Margin="20, 60, 20, 60">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <Grid HorizontalAlignment="Stretch" Height="120">
-                        <Image Width="100" Height="100" HorizontalAlignment="Left" Margin="10"
-                               Source="{Binding Path=ImageSource}" />
-                        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="120, 10, 10, 10">
-                            <TextBlock VerticalAlignment="Stretch" Text="{Binding Path=Name}" FontSize="16" />
-                            <TextBlock VerticalAlignment="Stretch" Text="{Binding Path=Suppliers.Name}" FontSize="16" />
-                            <TextBlock VerticalAlignment="Stretch" Text="{Binding Path=Storages.Name}" FontSize="16" />
-                        </StackPanel>
-                    </Grid>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+        <TabControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20, 70">
+            <TabItem x:Name="ProductsTab">
+                <TabItem.Header>
+                    <TextBlock Text="Продукты"  FontSize="16"></TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <ListBox x:Name="ProductsList" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid HorizontalAlignment="Stretch" Height="120">
+                                    <Image Width="100" Height="100" HorizontalAlignment="Left" Margin="10"
+                                           Source="{Binding Path=ImageSource}" />
+                                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                                Margin="120, 10, 10, 10">
+                                        <TextBlock VerticalAlignment="Stretch" Text="{Binding Path=Name}" FontSize="16" />
+                                        <TextBlock VerticalAlignment="Stretch" Text="{Binding Path=Suppliers.Name}" FontSize="16" />
+                                        <TextBlock VerticalAlignment="Stretch" Text="{Binding Path=Storages.Name}" FontSize="16" />
+                                    </StackPanel>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="UsersTab">
+                <TabItem.Header>
+                    <TextBlock Text="Пользователи"  FontSize="16"></TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <DataGrid x:Name="UsersList" AutoGeneratingColumn="OnAutoGeneratingColumn" />
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="RolesTab">
+                <TabItem.Header>
+                    <TextBlock Text="Роли"  FontSize="16"></TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <DataGrid x:Name="RolesList" AutoGeneratingColumn="OnAutoGeneratingColumn" />
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="SuppliersTab">
+                <TabItem.Header>
+                    <TextBlock Text="Поставщики" FontSize="16"></TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <DataGrid x:Name="SuppliersList" AutoGeneratingColumn="OnAutoGeneratingColumn" />
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="StoragesTab">
+                <TabItem.Header>
+                    <TextBlock Text="Склады"  FontSize="16"></TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <DataGrid x:Name="StoragesList" AutoGeneratingColumn="OnAutoGeneratingColumn" />
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="CountiesTab">
+                <TabItem.Header>
+                    <TextBlock Text="Страны"  FontSize="16"></TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <DataGrid x:Name="CountriesList" AutoGeneratingColumn="OnAutoGeneratingColumn" />
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
         <Button x:Name="AddBtn" Click="AddBtn_OnClick" HorizontalAlignment="Left" VerticalAlignment="Bottom"
                 Margin="20, 0,0, 20" Height="30" Width="150" Content="Добавить" />
         <Button x:Name="UpdateBtn" Click="UpdateBtn_OnClick" HorizontalAlignment="Left" VerticalAlignment="Bottom"

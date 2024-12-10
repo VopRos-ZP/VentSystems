@@ -11,15 +11,17 @@
             <TextBlock Text="Поиск" FontSize="16" VerticalAlignment="Center" />
             <TextBox x:Name="FindBox" FontSize="16" Width="250" Height="30" HorizontalAlignment="Left"
                      VerticalAlignment="Center" Margin="20, 0, 0 ,0" VerticalContentAlignment="Center" />
+            <ComboBox x:Name="TablesBox" FontSize="16" VerticalAlignment="Center" Width="200" Margin="20, 0, 0, 0" />
         </StackPanel>
         <ListBox x:Name="ProductsList" IsSynchronizedWithCurrentItem="True" HorizontalAlignment="Stretch"
-                 VerticalAlignment="Stretch" Margin="20, 60, 20, 60">
+                 VerticalAlignment="Stretch" Margin="20 70">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid HorizontalAlignment="Stretch" Height="120">
                         <Image Width="100" Height="100" HorizontalAlignment="Left" Margin="10"
                                Source="{Binding Path=ImageSource}" />
-                        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="120, 10, 10, 10">
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                    Margin="120, 10, 10, 10">
                             <TextBlock VerticalAlignment="Stretch" Text="{Binding Path=Name}" FontSize="16" />
                             <TextBlock VerticalAlignment="Stretch" Text="{Binding Path=Suppliers.Name}" FontSize="16" />
                             <TextBlock VerticalAlignment="Stretch" Text="{Binding Path=Storages.Name}" FontSize="16" />
