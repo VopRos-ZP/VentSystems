@@ -11,17 +11,16 @@ namespace VentSystems.Windows
         public UserWindow(Users user)
         {
             InitializeComponent();
-
+            
             Title = $"{user.LastName} {user.FirstName} {user.LastName}";
-
+            
             UpdateProductsList(Db.Entities.Products.ToList());
-
+            
             FindBox.TextChanged += (s, e) =>
             {
                 var filter = Db.Entities.Products.ToList().FindAll(p => p.Name.ToLower().Contains(FindBox.Text.ToLower()));
                 UpdateProductsList(filter);
             };
-
         }
 
         private void UpdateProductsList(List<Products> products)
