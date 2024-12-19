@@ -9,9 +9,9 @@ namespace VentSystems.Windows
         public LoginWindow()
         {
             InitializeComponent();
-            LoginBox.Text = "admin";
-            PasswordBox.Password = "admin";
-            OnLoginClick();
+            // LoginBox.Text = "admin";
+            // PasswordBox.Password = "admin";
+            // OnLoginClick();
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)

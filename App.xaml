@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:VentSystems"
              StartupUri="Windows/LoginWindow.xaml">
     <Application.Resources>
-         
+         <Style TargetType="Window">
+             <Setter Property="Icon" Value="../Images/logo.png"/>
+         </Style>
     </Application.Resources>
 </Application>
