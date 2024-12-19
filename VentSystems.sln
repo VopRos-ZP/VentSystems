@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentSystems", "VentSystems.csproj", "{431844E1-AFFA-4E87-906B-794E7671DEBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentSystemsTests", "..\VentSystemsTests\VentSystemsTests.csproj", "{A221AE99-A3DE-45CC-8DEB-22D8B7B7E923}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{431844E1-AFFA-4E87-906B-794E7671DEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{431844E1-AFFA-4E87-906B-794E7671DEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{431844E1-AFFA-4E87-906B-794E7671DEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A221AE99-A3DE-45CC-8DEB-22D8B7B7E923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A221AE99-A3DE-45CC-8DEB-22D8B7B7E923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A221AE99-A3DE-45CC-8DEB-22D8B7B7E923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A221AE99-A3DE-45CC-8DEB-22D8B7B7E923}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

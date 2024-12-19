@@ -116,6 +116,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PasswordChecker.cs" />
     <Compile Include="Test\TestValidation.cs" />
     <Compile Include="Utils\Db.cs" />
     <Compile Include="Windows\AdminWindow.xaml.cs">

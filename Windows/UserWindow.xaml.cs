@@ -12,8 +12,6 @@ namespace VentSystems.Windows
         {
             InitializeComponent();
             
-            Title = $"{user.LastName} {user.FirstName} {user.LastName}";
-            
             UpdateProductsList(Db.Entities.Products.ToList());
             
             FindBox.TextChanged += (s, e) =>
