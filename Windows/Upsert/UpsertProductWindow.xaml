@@ -6,6 +6,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
+        Icon="\Img\logo.ico"
         Title="Продукт" Height="500" Width="400">
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20, 20, 20, 20">

@@ -5,6 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:VentSystems.Windows.Upsert"
         mc:Ignorable="d"
+        Icon="\Img\logo.ico"
         Title="Пользователь" Height="300" Width="400">
     <Grid>
         <StackPanel Orientation="Vertical" Margin="20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">

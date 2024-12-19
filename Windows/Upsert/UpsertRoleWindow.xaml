@@ -6,6 +6,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
+        Icon="\Img\logo.ico"
         Title="Роль" Height="110" Width="400">
     <Grid>
         <StackPanel Orientation="Vertical" Margin="20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">

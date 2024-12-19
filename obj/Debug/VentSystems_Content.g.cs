@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/img/logo.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/logo.ico")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/model.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/model.tt")]
 
