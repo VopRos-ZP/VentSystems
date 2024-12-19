@@ -19,6 +19,11 @@ namespace VentSystems.Windows
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
+            if (LoginBox.Text.Length < 7 || PasswordBox.Password.Length < 7)
+            {
+                MessageBox.Show("Логин и пароль должны быть длиной не менее 7 символов");
+            }
+            
             try
             {
                 Db.Entities.Users.Add(new Users

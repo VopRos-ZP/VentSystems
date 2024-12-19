@@ -85,8 +85,23 @@
     <Compile Include="Windows\RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Upsert\UpsertCountryWindow.xaml.cs">
+      <DependentUpon>UpsertCountryWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Upsert\UpsertProductWindow.xaml.cs">
       <DependentUpon>UpsertProductWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Upsert\UpsertRoleWindow.xaml.cs">
+      <DependentUpon>UpsertRoleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Upsert\UpsertStorageWindow.xaml.cs">
+      <DependentUpon>UpsertStorageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Upsert\UpsertSupplierWindow.xaml.cs">
+      <DependentUpon>UpsertSupplierWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Upsert\UpsertUserWindow.xaml.cs">
+      <DependentUpon>UpsertUserWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\UserWindow.xaml.cs">
       <DependentUpon>UserWindow.xaml</DependentUpon>
@@ -107,7 +122,12 @@
     <Page Include="Windows\LoginWindow.xaml" />
     <Page Include="Windows\ManagerWindow.xaml" />
     <Page Include="Windows\RegistrationWindow.xaml" />
+    <Page Include="Windows\Upsert\UpsertCountryWindow.xaml" />
     <Page Include="Windows\Upsert\UpsertProductWindow.xaml" />
+    <Page Include="Windows\Upsert\UpsertRoleWindow.xaml" />
+    <Page Include="Windows\Upsert\UpsertStorageWindow.xaml" />
+    <Page Include="Windows\Upsert\UpsertSupplierWindow.xaml" />
+    <Page Include="Windows\Upsert\UpsertUserWindow.xaml" />
     <Page Include="Windows\UserWindow.xaml" />
   </ItemGroup>
   <ItemGroup>

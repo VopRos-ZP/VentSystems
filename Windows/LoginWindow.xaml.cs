@@ -9,9 +9,17 @@ namespace VentSystems.Windows
         public LoginWindow()
         {
             InitializeComponent();
+            LoginBox.Text = "admin";
+            PasswordBox.Password = "admin";
+            OnLoginClick();
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            OnLoginClick();
+        }
+
+        private void OnLoginClick()
         {
             var login = LoginBox.Text;
             var password = PasswordBox.Password;
@@ -40,7 +48,7 @@ namespace VentSystems.Windows
                 Close();
             }
         }
-
+        
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)
         {
             new RegistrationWindow().ShowDialog();

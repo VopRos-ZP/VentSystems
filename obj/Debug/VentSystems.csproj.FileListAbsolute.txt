@@ -35,3 +35,13 @@ C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\UserWindow.g.cs
 C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\ManagerWindow.baml
 C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertProductWindow.baml
 C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertProductWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertCountryWindow.baml
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertRoleWindow.baml
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertSupplierWindow.baml
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertCountryWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertRoleWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertStorageWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertSupplierWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertUserWindow.g.cs
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertStorageWindow.baml
+C:\Users\XML110924\source\repos\VentSystems\obj\Debug\Windows\Upsert\UpsertUserWindow.baml
